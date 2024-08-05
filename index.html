@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe del Proyecto: Mi Primera Chamba</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .navbar {
+            background-color: black;
+        }
+
+        .navbar-brand {
+            color: #ff1569;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            border-bottom: solid 1px #999999;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #cccccc;
+        }
+
+        .nav-item.active .nav-link:hover {
+            color: #f0ad4e;
+        }
+        .nav-item i{
+            color: #aafff4;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+        .timeline-section {
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-section h2 {
+            color: white;
+        }
+
+        footer {
+            background-color: #6a8dff;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-tools"></i> Mi Primera Chamba</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduccion"><i class="fas fa-home"></i> Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#objetivos"><i class="fas fa-bullseye"></i> Objetivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias"><i class="fas fa-laptop-code"></i> Tecnologías
+                            Utilizadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#estructura"><i class="fas fa-sitemap"></i> Estructura de la
+                            Aplicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desarrollo"><i class="fas fa-code"></i> Desarrollo y
+                            Implementación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusion"><i class="fas fa-check-circle"></i> Conclusión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div id="introduccion">
+            <h2>1. Introducción</h2>
+            <p>Mi Primera Chamba es una aplicación web diseñada para facilitar la conexión entre empleadores y
+                trabajadores interesados en trabajos informales de corta duración...</p>
+        </div>
+
+        <div id="objetivos">
+            <h2>2. Objetivos</h2>
+            <ul>
+                <li><i class="fas fa-check"></i> Permitir a los empleadores publicar trabajos informales con detalles
+                    como descripción, ubicación, método de pago y habilidades requeridas.</li>
+                <li><i class="fas fa-check"></i> Facilitar a los trabajadores la búsqueda de trabajos por título,
+                    descripción o habilidades específicas.</li>
+                <li><i class="fas fa-check"></i> Proporcionar un sistema de mensajería para la comunicación directa
+                    entre empleadores y trabajadores.</li>
+                <li><i class="fas fa-check"></i> Mejorar la accesibilidad y la usabilidad mediante un diseño
+                    responsivo utilizando Bootstrap y funcionalidades dinámicas con JavaScript.</li>
+            </ul>
+        </div>
+
+        <div id="tecnologias">
+            <h2>3. Tecnologías Utilizadas</h2>
+            <ul>
+                <li><i class="fas fa-server"></i> Backend: PHP para la lógica del servidor y la interacción con la
+                    base de datos MySQL.</li>
+                <li><i class="fas fa-desktop"></i> Frontend: HTML, CSS (Bootstrap) para la estructura y diseño visual.
+                </li>
+                <li><i class="fas fa-database"></i> Base de Datos: MySQL para el almacenamiento de datos
+                    relacionales.</li>
+                <li><i class="fab fa-js"></i> JavaScript: Para la interactividad del cliente y la mejora de la
+                    experiencia del usuario.</li>
+                <li><i class="fab fa-bootstrap"></i> Framework: Utilizaremos Bootstrap para el diseño responsive y la
+                    interfaz de usuario.</li>
+            </ul>
+        </div>
+
+        <div id="estructura">
+            <h2>4. Estructura de la Aplicación</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">a. Base de Datos (MySQL)</h5>
+                    <ul>
+                        <li>usuarios: Almacena información de los usuarios registrados (empleadores y trabajadores).
+                        </li>
+                        <li>empleadores: Contiene detalles específicos de los empleadores como disponibilidad.</li>
+                        <li>trabajadores: Almacena habilidades y disponibilidad de los trabajadores.</li>
+                        <li>trabajos: Registra los trabajos publicados por los empleadores con detalles como título,
+                            descripción, ubicación y métodos de pago.</li>
+                        <li>mensajes: Permite la comunicación directa entre empleadores y trabajadores.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">b. Funcionalidades Principales</h5>
+                    <ul>
+                        <li>Registro e Inicio de Sesión: Permitirá a los usuarios crear cuentas y autenticarse como
+                            empleadores o trabajadores.</li>
+                        <li>Publicación de Trabajos: Formulario para que los empleadores publiquen trabajos con
+                            detalles específicos.</li>
+                        <li>Búsqueda de Trabajos: Funcionalidad para que los trabajadores busquen trabajos por título,
+                            descripción o habilidades.</li>
+                        <li>Mensajería: Sistema de mensajería para la comunicación directa entre usuarios.</li>
+                        <li>Edición de Perfiles: Capacidad para que empleadores y trabajadores editen sus perfiles y
+                            habilidades respectivas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">c. Diseño Frontend (Bootstrap y JavaScript)</h5>
+                    <ul>
+                        <li>Interfaz Responsiva: Diseño adaptable que garantiza una experiencia de usuario óptima en
+                            diferentes dispositivos.</li>
+                        <li>Formularios Interactivos: Utilización de JavaScript para validación de formularios y
+                            mejora de la interacción del usuario.</li>
+                        <li>Estilo Visual Atractivo: Utilización de componentes de Bootstrap para un diseño limpio y
+                            moderno.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="desarrollo">
+            <h2>5. Desarrollo y Implementación</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fase 1: Diseño y Estructura Inicial</h5>
+                    <ul>
+                        <li>Diseño de la base de datos y creación de tablas.</li>
+                        <li>Desarrollo de las páginas principales: registro, inicio de sesión y perfiles de usuario.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fase 2: Implementación de Funcionalidades</h5>
+                    <ul>
+                        <li>Desarrollo de formularios para publicación y búsqueda de trabajos.</li>
+                        <li>Implementación del sistema de mensajería y comunicación entre usuarios.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fase 3: Mejoras y Optimización</h5>
+                    <ul>
+                        <li>Pruebas de usabilidad y rendimiento.</li>
+                        <li>Optimización de consultas SQL y mejoras en el rendimiento del servidor.</li>
+                        <li>Ajustes finales de diseño y corrección de errores.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="conclusion">
+            <h2>6. Conclusión</h2>
+            <p>Mi Primera Chamba proporcionará una plataforma eficiente y fácil de usar para conectar empleadores y
+                trabajadores en el mercado de trabajos informales de corta duración. Con un enfoque en la
+                accesibilidad, funcionalidad y diseño moderno, la aplicación busca mejorar la experiencia tanto para
+                empleadores como para trabajadores, facilitando la búsqueda y gestión de oportunidades laborales.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Primera Chamba. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        ></script>
+        <script>
+    $(document).ready(function(){
+        $('.navbar-nav a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
+</script>
+
+</body>
+
+</html>
